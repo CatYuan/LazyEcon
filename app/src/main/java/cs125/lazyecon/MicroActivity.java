@@ -42,6 +42,6 @@ public class MicroActivity extends AppCompatActivity {
     }
 
     public static void main(String[] args) {
-        
+
     }
 }
