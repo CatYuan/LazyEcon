@@ -78,7 +78,7 @@ public class MicroActivity extends AppCompatActivity {
         change_in_price = mMessageEditText.getText().toString();
     }
 
-    /*
+
     private LineGraphSeries<DataPoint> series;
     public void equationtoGraph(String intercept, String slope, boolean isPositive) {
         int i = Integer.parseInt(intercept);
@@ -106,11 +106,6 @@ public class MicroActivity extends AppCompatActivity {
     }
 
     public static void main(String[] args) {
-<<<<<<< HEAD
         
-    }*/
-=======
-
     }
->>>>>>> f0ae8e0e6d1470171bdd104a53d5511abfe5190e
 }
