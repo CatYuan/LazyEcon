@@ -16,11 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:label="Home">
+        </activity>
         <activity android:name=".MicroActivity"
+            android:label="Micro"
             android:parentActivityName=".MainActivity">
         </activity>
         <activity android:name=".MacroActivity"
+            android:label="Macro"
             android:parentActivityName=".MainActivity">
         </activity>
     </application>

@@ -3,4 +3,12 @@
     <string name="lazy_econ">Lazy Econ</string>
     <string name="macro">Macro</string>
     <string name="micro">Micro</string>
+    <string name="microTabItem1">Elasticity</string>
+    <string name="microTabItem2">Tab 2</string>
+    <string name="microTabItem3">Tab3</string>
+    <string name="microTabItem4">Graph</string>
+    <string name="submit">Submit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
