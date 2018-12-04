@@ -1,5 +1,6 @@
 package cs125.lazyecon;
 
+import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
@@ -17,70 +18,29 @@ import com.jjoe64.graphview.series.LineGraphSeries;
 
 public class MicroActivity extends AppCompatActivity {
 
-    public static final String EXTRA_MESSAGE =
-            "com.example.android.LazyEcon.extra.MESSAGE";
-    private EditText mMessageEditText;
-    private String change_in_demand;
-    private String change_in_price;
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_micro);
-
-        //creates Toolbar
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        //instance of tabLayout from View
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.micro_tab_layout);
-        // Set the text for each tab.
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.microTabItem1));
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.microTabItem2));
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.microTabItem3));
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.microTabItem4));
-        // Set the tabs to fill the entire layout.
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-        // Use PagerAdapter to manage page views in fragments.
-        // Each page is represented by its own fragment.
-        // This is another example of the adapter pattern.
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        final PagerAdapter adapter = new PageAdapter
-                (getSupportFragmentManager(), tabLayout.getTabCount());
-        viewPager.setAdapter(adapter);
-        // Setting a listener for clicks.
-        viewPager.addOnPageChangeListener(new
-                TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-            }
-        });
-
-        // Create an instance of the tab layout from the view.
     }
 
-    public void submitText(View view) {
-        mMessageEditText = (EditText) findViewById(R.id.demand_change_edit_text);
-        change_in_demand = mMessageEditText.getText().toString();
-        mMessageEditText = (EditText) findViewById(R.id.price_change_edit_text);
-        change_in_price = mMessageEditText.getText().toString();
+    public void micro_goToTab1(View view) {
+        Intent intent = new Intent(this, Micro_Tab1.class);
+        startActivity(intent);
     }
 
+    public void micro_goToTab2(View view) {
+        Intent intent = new Intent(this, Micro_Tab2.class);
+        startActivity(intent);
+    }
 
+    public void micro_goToTab3(View view) {
+        Intent intent = new Intent(this, Micro_Tab3.class);
+        startActivity(intent);
+    }
 
-    public static void main(String[] args) {
-        
+    public void micro_goToTab4(View view) {
+        Intent intent = new Intent(this, Micro_Tab4.class);
+        startActivity(intent);
     }
 }

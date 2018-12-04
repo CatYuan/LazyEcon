@@ -7,31 +7,56 @@
     android:layout_height="match_parent"
     tools:context=".MicroActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+    <Button
+        android:id="@+id/micro_tab1_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="136dp"
+        android:layout_above="@+id/micro_tab2_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-149dp"
+        android:text="@string/microTabItem1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:onClick="micro_goToTab1"/>
+
+    <Button
+        android:id="@+id/micro_tab2_button"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="149dp"
+        android:text="@string/microTabItem2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:onClick="micro_goToTab2"/>
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/micro_tab_layout"
+    <Button
+        android:id="@+id/micro_tab3_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        android:layout_height="135dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="143dp"
+        android:text="@string/microTabItem3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:onClick="micro_goToTab3"/>
 
-    </android.support.design.widget.TabLayout>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
+    <Button
+        android:id="@+id/micro_tab4_button"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@id/tab_layout"/>
+        android:layout_height="139dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/microTabItem4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:onClick="micro_goToTab4"/>
 
 </RelativeLayout>

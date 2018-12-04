@@ -16,23 +16,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
-            android:label="Home">
-        </activity>
-        <activity android:name=".MicroActivity"
+        <activity
+            android:name=".MainActivity"
+            android:label="Home" />
+        <activity
+            android:name=".MicroActivity"
             android:label="Micro"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cs125.lazyecon.MainActivity" />
         </activity>
-        <activity android:name=".MacroActivity"
+        <activity
+            android:name=".MacroActivity"
             android:label="Macro"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="cs125.lazyecon.MainActivity"/>
+                android:value="cs125.lazyecon.MainActivity" />
         </activity>
+        <activity android:name=".Micro_Tab1" />
+        <activity android:name=".Micro_Tab2" />
+        <activity android:name=".Micro_Tab3" />
+        <activity android:name=".Micro_Tab4"></activity>
     </application>
 
 </manifest>
