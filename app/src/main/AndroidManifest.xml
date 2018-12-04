@@ -31,7 +31,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="cs125.lazyecon.MainActivity"
+                android:value="cs125.lazyecon.MainActivity"/>
         </activity>
     </application>
 
