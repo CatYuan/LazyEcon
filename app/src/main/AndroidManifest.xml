@@ -22,10 +22,16 @@
         <activity android:name=".MicroActivity"
             android:label="Micro"
             android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs125.lazyecon.MainActivity" />
         </activity>
         <activity android:name=".MacroActivity"
             android:label="Macro"
             android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs125.lazyecon.MainActivity"/>
         </activity>
     </application>
 
