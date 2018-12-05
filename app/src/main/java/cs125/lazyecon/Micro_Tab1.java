@@ -18,6 +18,8 @@ public class Micro_Tab1 extends AppCompatActivity implements AdapterView.OnItemS
     private double priceChange_val;
     private double QChange_val;
     private TextView result;
+    private String typeofSpinner;
+    private double elasticity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,9 @@ public class Micro_Tab1 extends AppCompatActivity implements AdapterView.OnItemS
             public void onClick(View v) {
                 priceChange_val = Double.valueOf(priceChange.getText().toString());
                 QChange_val = Double.valueOf(QChange.getText().toString());
+                if (typeofSpinner.equals("Demand")) {
+                    result.setText("The elasticity of Demand is = " + String.valueOf(elasticity));
+                }
             }
         });
 
@@ -57,8 +62,8 @@ public class Micro_Tab1 extends AppCompatActivity implements AdapterView.OnItemS
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String spinneritem = parent.getItemAtPosition(position).toString();
         if (spinneritem.equals("Demand")) {
-            double d = elasticityd(QChange_val, priceChange_val);
-            result.setText("The Elasticity of Demand is = " + String.valueOf(d));
+            elasticity = elasticityd(QChange_val, priceChange_val);
+            typeofSpinner = "Demand";
         }
 
 

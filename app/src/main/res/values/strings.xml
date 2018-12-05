@@ -17,7 +17,7 @@
     <string name="Elasticitydemandstatement">Elasticity of Demand = </string>
     <string-array name="micro_tab1_spinner_array">
         <item>Demand</item>
-        <item>Price</item>
+        <item>Supply</item>
         <item>Cross</item>
         <item>Income</item>
     </string-array>
