@@ -3,6 +3,7 @@ package cs125.lazyecon;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.style.ForegroundColorSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -33,13 +34,38 @@ public class Micro_Tab1 extends AppCompatActivity implements AdapterView.OnItemS
         priceChange = (EditText)findViewById(R.id.textView9);
         QChange = (EditText)findViewById(R.id.textView8);
         result = (TextView) findViewById(R.id.tvanswer);
+
+        //when the Submit button is clicked
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                priceChange_val = Double.valueOf(priceChange.getText().toString());
-                QChange_val = Double.valueOf(QChange.getText().toString());
-                if (typeofSpinner.equals("Demand")) {
-                    result.setText("The elasticity of Demand is = " + String.valueOf(elasticity));
+                //stores the values that the user has input into each EditText
+                priceChange_val = Double.parseDouble(priceChange.getText().toString());
+                QChange_val = Double.parseDouble(QChange.getText().toString());
+
+                /*TODO this is where you insert what to do in case of each different elasticity.
+                  you can directly insert the elasticity equations under each case
+                  or you can create separate functions as you did for elasticityd
+
+                  For example the <code> case "Demand": </code> could have been written as
+                         result.setText("The elasticity of Demand is " + "-" + Math.abs(QChange_val/priceChange_val));
+                  or it can be written as it is below.
+                  TODO However you choose to write the remaining elsaticities, please write them within each "case" block
+                 */
+                switch(typeofSpinner) {
+                    case "Demand":
+                        elasticity = elasticityd(QChange_val, priceChange_val);
+                        result.setText("The elasticity of Demand is = " + elasticity);
+                        break;
+                    case "Supply":
+                        break;
+                    case "Cross":
+                        break;
+                    case "Income":
+                        break;
+                    default:
+                        result.setText("The elasticity of Demand is = " + elasticity);
+                        break;
                 }
             }
         });
@@ -61,14 +87,8 @@ public class Micro_Tab1 extends AppCompatActivity implements AdapterView.OnItemS
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String spinneritem = parent.getItemAtPosition(position).toString();
-        if (spinneritem.equals("Demand")) {
-            elasticity = elasticityd(QChange_val, priceChange_val);
-            typeofSpinner = "Demand";
-        }
-
-
-        //TODO insert code for what happens when a specific spinner_item is selected
-        //TODO how do we handle different elasticities within the program
+        //sets typeofSpinner to the spinneritem
+        typeofSpinner = spinneritem;
     }
 
     @Override
