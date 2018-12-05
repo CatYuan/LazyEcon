@@ -15,7 +15,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="-149dp"
-        android:text="@string/microTabItem1"
+        android:text="@string/Supply_and_demand"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="0dp"
         android:onClick="micro_goToTab1"/>
@@ -28,7 +28,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="149dp"
-        android:text="@string/microTabItem2"
+        android:text="@string/Equilibrium"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="0dp"
         android:onClick="micro_goToTab2"/>
@@ -41,7 +41,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="143dp"
-        android:text="@string/microTabItem3"
+        android:text="@string/Tables"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="0dp"
         android:onClick="micro_goToTab3"/>
@@ -54,7 +54,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="0dp"
-        android:text="@string/microTabItem4"
+        android:text="@string/Graph"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="0dp"
         android:onClick="micro_goToTab4"/>

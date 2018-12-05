@@ -3,11 +3,18 @@
     <string name="lazy_econ">Lazy Econ</string>
     <string name="macro">Macro</string>
     <string name="micro">Micro</string>
-    <string name="microTabItem1">Elasticity</string>
-    <string name="microTabItem2">Tab 2</string>
-    <string name="microTabItem3">Tab3</string>
-    <string name="microTabItem4">Graph</string>
+    <string name="Supply_and_demand">Supply And Demand</string>
+    <string name="Equilibrium">Equilibrium</string>
+    <string name="Tables">Tables</string>
+    <string name="Graph">Graph</string>
     <string name="submit">Submit</string>
+    <string name="Elasticity">Elasticity</string>
+    <string name="Type">Type</string>
+    <string name="ChangeQ">Δ Quantity</string>
+    <string name="ChangeP">Δ Price</string>
+    <string name="Submit">Submit</string>
+    <string name="Result">Result</string>
+    <string name="Elasticitydemandstatement">Elasticity of Demand = </string>
     <string-array name="micro_tab1_spinner_array">
         <item>Demand</item>
         <item>Price</item>
