@@ -8,6 +8,7 @@
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graph"
+<<<<<<< HEAD
         android:layout_width="360dp"
         android:layout_height="380dp"
         android:layout_marginStart="8dp"
@@ -19,5 +20,24 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+=======
+        android:layout_width="370dp"
+        android:layout_height="374dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="141dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="0dp"
+        android:background="#9999ff"
+        android:text="@string/Type"
+        android:textSize="30sp" />
+>>>>>>> 0d1e94bdcb3bf74a2e4dce41be4768b38b6bb9b9
 
 </android.support.constraint.ConstraintLayout>

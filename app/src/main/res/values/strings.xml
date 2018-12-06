@@ -27,8 +27,16 @@
         <item>Cross </item>
         <item>Income</item>
     </string-array>
+<<<<<<< HEAD
     <string-array name="macro_tab1_spinner_array">
         <item>Expenditure</item>
         <item>Income</item>
+=======
+    <string-array name="Graphstuff">
+        <item>Demand or Supply</item>
+        <item>Demand and Supply</item>
+        <item>Demand or Supply (Shift it)</item>
+        <item>Demand and Supply(Shift both)</item>
+>>>>>>> 0d1e94bdcb3bf74a2e4dce41be4768b38b6bb9b9
     </string-array>
 </resources>
