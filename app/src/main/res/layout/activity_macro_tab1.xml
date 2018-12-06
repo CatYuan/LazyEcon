@@ -19,7 +19,6 @@
         android:text="@string/calculate_gdp"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
-
     <TextView
         android:id="@+id/GDP_approach"
         android:layout_width="wrap_content"
@@ -31,9 +30,8 @@
         android:layout_marginLeft="165dp"
         android:layout_marginTop="115dp"
         android:text="@string/GDP_approach" />
-
     <Spinner
-        android:id="@+id/GDP_approach_spinner"
+        android:id="@+id/macro_tab1_spinner"
         android:layout_width="162dp"
         android:layout_height="36dp"
         android:layout_alignTop="@+id/GDP_approach"
@@ -42,7 +40,6 @@
         android:text="@string/Type"
         android:layout_marginLeft="-114dp"
         android:layout_toRightOf="@+id/macro_tab1_GDP_editText1" />
-
     <EditText
         android:id="@+id/macro_tab1_GDP_editText1"
         android:layout_width="wrap_content"
@@ -56,7 +53,6 @@
         android:textSize="12sp"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="29dp" />
-
     <EditText
         android:id="@+id/macro_tab1_GDP_editText2"
         android:layout_width="wrap_content"
@@ -70,7 +66,6 @@
         android:hint="Investments"
         android:inputType="numberDecimal"
         android:textSize="12sp" />
-
     <EditText
         android:id="@+id/macro_tab1_GDP_editText3"
         android:layout_width="wrap_content"
@@ -84,21 +79,18 @@
         android:textSize="12sp"
         android:layout_marginLeft="-40dp"
         android:layout_toRightOf="@+id/GDP_description" />
-
     <EditText
         android:id="@+id/macro_tab1_GDP_editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/macro_tab1_GDP_editText1"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="341dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
         android:hint="Net Exports"
         android:inputType="numberDecimal"
         android:textSize="12sp" />
-
     <Button
         android:id="@+id/macro_tab1_submit_button"
         android:layout_width="78dp"
@@ -110,7 +102,6 @@
         android:text="@string/submit"
         android:layout_alignRight="@+id/GDP_approach"
         android:layout_marginRight="0dp" />
-
     <TextView
         android:id="@+id/macro_tab1_results"
         android:layout_width="wrap_content"
