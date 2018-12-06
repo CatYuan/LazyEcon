@@ -2,17 +2,30 @@ package cs125.lazyecon;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
-public class Micro_Tab4 extends AppCompatActivity {
+public class Micro_Tab4 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+    private String Spinneritem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_micro__tab4);
+
+        Spinner spinner1 = (Spinner) findViewById(R.id.spinner2);
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.Graphstuff, android.R.layout.simple_spinner_item);
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner1.setAdapter(adapter1);
+        if (spinner1 != null) {
+            spinner1.setOnItemSelectedListener(this);
+        }
     }
 
     private LineGraphSeries<DataPoint> series;
@@ -39,5 +52,15 @@ public class Micro_Tab4 extends AppCompatActivity {
             }
             graph.addSeries(series);
         }
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        Spinneritem = parent.getItemAtPosition(position).toString();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }

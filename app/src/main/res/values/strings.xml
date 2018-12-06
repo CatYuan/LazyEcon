@@ -21,4 +21,10 @@
         <item>Cross </item>
         <item>Income</item>
     </string-array>
+    <string-array name="Graphstuff">
+        <item>Demand or Supply</item>
+        <item>Demand and Supply</item>
+        <item>Demand or Supply (Shift it)</item>
+        <item>Demand and Supply(Shift both)</item>
+    </string-array>
 </resources>

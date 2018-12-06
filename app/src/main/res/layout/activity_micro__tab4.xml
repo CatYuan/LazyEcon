@@ -7,8 +7,23 @@
     tools:context=".Micro_Tab4">
 
     <com.jjoe64.graphview.GraphView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/graph"/>
+        android:id="@+id/graph"
+        android:layout_width="370dp"
+        android:layout_height="374dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="141dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="0dp"
+        android:background="#9999ff"
+        android:text="@string/Type"
+        android:textSize="30sp" />
 
 </android.support.constraint.ConstraintLayout>

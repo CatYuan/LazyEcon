@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C0C0C0"
     tools:context=".Micro_Tab1">
 
     <TextView
@@ -18,7 +19,6 @@
         android:layout_toLeftOf="@+id/textView9"
         android:background="@android:color/transparent"
         android:text="@string/Elasticity"
-        android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
 
     <Spinner
@@ -27,6 +27,7 @@
         android:layout_height="52dp"
         android:layout_alignTop="@+id/textView8"
         android:layout_marginTop="0dp"
+        android:background="#9999ff"
         android:text="@string/Type"
         android:textSize="30sp" />
 
@@ -40,6 +41,7 @@
         android:layout_marginStart="128dp"
         android:layout_marginLeft="128dp"
         android:layout_marginTop="-1dp"
+        android:background="#ccccff"
         android:hint="@string/ChangeQ"
         android:inputType="numberDecimal"
         android:textSize="15sp" />
@@ -54,6 +56,7 @@
         android:layout_marginTop="0dp"
         android:layout_marginEnd="88dp"
         android:layout_marginRight="88dp"
+        android:background="#ccccff"
         android:hint="@string/ChangeP"
         android:inputType="numberDecimal"
         android:textSize="15sp" />
@@ -68,6 +71,7 @@
         android:layout_marginTop="189dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
+        android:background="#ff9966"
         android:text="@string/submit" />
 
     <TextView
