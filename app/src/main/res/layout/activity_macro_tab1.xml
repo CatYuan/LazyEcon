@@ -39,7 +39,9 @@
         android:layout_alignTop="@+id/GDP_approach"
         android:layout_marginStart="-114dp"
         android:layout_toEndOf="@+id/macro_tab1_GDP_editText1"
-        android:text="@string/Type" />
+        android:text="@string/Type"
+        android:layout_marginLeft="-114dp"
+        android:layout_toRightOf="@+id/macro_tab1_GDP_editText1" />
 
     <EditText
         android:id="@+id/macro_tab1_GDP_editText1"
@@ -51,7 +53,9 @@
         android:layout_marginTop="188dp"
         android:hint="Consumption"
         android:inputType="numberDecimal"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="29dp" />
 
     <EditText
         android:id="@+id/macro_tab1_GDP_editText2"
@@ -77,7 +81,9 @@
         android:layout_toEndOf="@+id/GDP_description"
         android:hint="Government"
         android:inputType="numberDecimal"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:layout_marginLeft="-40dp"
+        android:layout_toRightOf="@+id/GDP_description" />
 
     <EditText
         android:id="@+id/macro_tab1_GDP_editText4"
@@ -101,7 +107,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="268dp"
-        android:text="@string/submit" />
+        android:text="@string/submit"
+        android:layout_alignRight="@+id/GDP_approach"
+        android:layout_marginRight="0dp" />
 
     <TextView
         android:id="@+id/macro_tab1_results"
@@ -111,6 +119,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="231dp"
-        android:text="this is the result" />
+        android:text="this is the result"
+        android:layout_alignLeft="@+id/GDP_description"
+        android:layout_marginLeft="0dp" />
 
 </RelativeLayout>
