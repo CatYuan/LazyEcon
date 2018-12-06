@@ -5,20 +5,20 @@
     <string name="micro">Micro</string>
     <string name="Supply_and_demand">Supply And Demand</string>
     <string name="Equilibrium">Equilibrium</string>
-    <string name="Tables">Tables</string>
+    <string name="CostandRevenue">Cost And Revenue Analysis</string>
     <string name="Graph">Graph</string>
     <string name="submit">Submit</string>
     <string name="Elasticity">Elasticity</string>
     <string name="Type">Type</string>
-    <string name="ChangeQ">Δ Quantity</string>
-    <string name="ChangeP">Δ Price</string>
+    <string name="ChangeQ">%Δ Quantity</string>
+    <string name="ChangeP">%Δ Price</string>
     <string name="Submit">Submit</string>
     <string name="Result">Result</string>
     <string name="Elasticitydemandstatement">Elasticity of Demand = </string>
     <string-array name="micro_tab1_spinner_array">
         <item>Demand</item>
         <item>Supply</item>
-        <item>Cross</item>
+        <item>Cross </item>
         <item>Income</item>
     </string-array>
 </resources>

@@ -21,6 +21,7 @@ public class Micro_Tab1 extends AppCompatActivity implements AdapterView.OnItemS
     private TextView result;
     private String typeofSpinner;
     private double elasticity;
+    private String Degreeofelasticity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,16 +56,54 @@ public class Micro_Tab1 extends AppCompatActivity implements AdapterView.OnItemS
                 switch(typeofSpinner) {
                     case "Demand":
                         elasticity = elasticityd(QChange_val, priceChange_val);
-                        result.setText("The elasticity of Demand is = " + elasticity);
+                        if (Math.abs(elasticity) == 1) {
+                            Degreeofelasticity = "so it is Unitary Elastic";
+                        }
+                        if (Math.abs(elasticity) > 1) {
+                            Degreeofelasticity = "so it relatively elastic";
+                        } else {
+                            Degreeofelasticity = "so it is relatively inelastic";
+                        }
+                        result.setText("The elasticity of Demand is = " + elasticity + Degreeofelasticity);
                         break;
                     case "Supply":
+                        elasticity = elasticitys(QChange_val, priceChange_val);
+                        if (Math.abs(elasticity) == 1) {
+                            Degreeofelasticity = "so it is Unitary Elastic";
+                        }
+                        if (Math.abs(elasticity) > 1) {
+                            Degreeofelasticity = "so it relatively elastic";
+                        } else {
+                            Degreeofelasticity = "so it is relatively inelastic";
+                        }
+                        result.setText("The elasticity of Supply is = " + elasticity + Degreeofelasticity);
                         break;
                     case "Cross":
+                        elasticity = elasticityCross(QChange_val, priceChange_val);
+                        if (elasticity == 0) {
+                            Degreeofelasticity = "so the two goods are unrelated.";
+                        }
+                        if (elasticity > 0) {
+                            Degreeofelasticity = "since it is positive, the two goods are substitutes.";
+                        } else {
+                            Degreeofelasticity = "the two goods are complementary";
+                        }
+                        result.setText("The cross elasticity is equal to" + elasticity + Degreeofelasticity);
                         break;
                     case "Income":
+                        elasticity = elasticityincome(QChange_val, priceChange_val);
+                        if (elasticity == 0) {
+                            Degreeofelasticity = "so income has no affect on the demand of the good";
+                        }
+                        if (elasticity > 0) {
+                            Degreeofelasticity = ",since it is positive, the good in place is normal.";
+                        } else {
+                            Degreeofelasticity = "so the good is inferior";
+                        }
+                        result.setText("The Income elasticity is equal to" + elasticity + Degreeofelasticity);
                         break;
                     default:
-                        result.setText("The elasticity of Demand is = " + elasticity);
+                        result.setText("invalid option");
                         break;
                 }
             }
@@ -98,5 +137,8 @@ public class Micro_Tab1 extends AppCompatActivity implements AdapterView.OnItemS
     public double elasticityd(double Q, double P) {
         return -Math.abs(Q/P);
     }
+    public double elasticitys(double Q, double P) { return Math.abs(Q/P);}
+    public double elasticityCross(double Q, double P) {return Q/P;}
+    public double elasticityincome(double Q, double P) {return Q/P;}
 
 }
