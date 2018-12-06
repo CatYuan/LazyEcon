@@ -15,10 +15,20 @@
     <string name="Submit">Submit</string>
     <string name="Result">Result</string>
     <string name="Elasticitydemandstatement">Elasticity of Demand = </string>
+    <string name="gdp">GDP</string>
+    <string name="inflation_and_interest_rate">Inflation and Interest Rate</string>
+    <string name="mps_mpc_and_tax_multiplier">MPS/MPC and Tax Multiplier</string>
+    <string name="unemployment">Unemployment</string>
+    <string name="calculate_gdp">Calculate GDP</string>
+    <string name="GDP_approach">What approach will you use \n to calculate the GDP?</string>
     <string-array name="micro_tab1_spinner_array">
         <item>Demand</item>
         <item>Supply</item>
         <item>Cross </item>
+        <item>Income</item>
+    </string-array>
+    <string-array name="macro_tab1_spinner_array">
+        <item>Expenditure</item>
         <item>Income</item>
     </string-array>
 </resources>

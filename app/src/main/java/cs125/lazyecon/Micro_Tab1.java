@@ -69,36 +69,36 @@ public class Micro_Tab1 extends AppCompatActivity implements AdapterView.OnItemS
                     case "Supply":
                         elasticity = elasticitys(QChange_val, priceChange_val);
                         if (Math.abs(elasticity) == 1) {
-                            Degreeofelasticity = "so it is Unitary Elastic";
+                            Degreeofelasticity = " so it is Unitary Elastic";
                         }
                         if (Math.abs(elasticity) > 1) {
-                            Degreeofelasticity = "so it relatively elastic";
+                            Degreeofelasticity = " so it relatively elastic";
                         } else {
-                            Degreeofelasticity = "so it is relatively inelastic";
+                            Degreeofelasticity = " so it is relatively inelastic";
                         }
                         result.setText("The elasticity of Supply is = " + elasticity + Degreeofelasticity);
                         break;
                     case "Cross":
                         elasticity = elasticityCross(QChange_val, priceChange_val);
                         if (elasticity == 0) {
-                            Degreeofelasticity = "so the two goods are unrelated.";
+                            Degreeofelasticity = " so the two goods are unrelated.";
                         }
                         if (elasticity > 0) {
-                            Degreeofelasticity = "since it is positive, the two goods are substitutes.";
+                            Degreeofelasticity = " since it is positive, the two goods are substitutes.";
                         } else {
-                            Degreeofelasticity = "the two goods are complementary";
+                            Degreeofelasticity = " the two goods are complementary";
                         }
                         result.setText("The cross elasticity is equal to" + elasticity + Degreeofelasticity);
                         break;
                     case "Income":
                         elasticity = elasticityincome(QChange_val, priceChange_val);
                         if (elasticity == 0) {
-                            Degreeofelasticity = "so income has no affect on the demand of the good";
+                            Degreeofelasticity = " so income has no affect on the demand of the good";
                         }
                         if (elasticity > 0) {
-                            Degreeofelasticity = ",since it is positive, the good in place is normal.";
+                            Degreeofelasticity = " ,since it is positive, the good in place is normal.";
                         } else {
-                            Degreeofelasticity = "so the good is inferior";
+                            Degreeofelasticity = " so the good is inferior";
                         }
                         result.setText("The Income elasticity is equal to" + elasticity + Degreeofelasticity);
                         break;
