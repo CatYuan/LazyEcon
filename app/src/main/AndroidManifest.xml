@@ -38,7 +38,11 @@
         <activity android:name=".Micro_Tab1" />
         <activity android:name=".Micro_Tab2" />
         <activity android:name=".Micro_Tab3" />
-        <activity android:name=".Micro_Tab4"></activity>
+        <activity android:name=".Micro_Tab4" />
+        <activity android:name=".macro_tab1" />
+        <activity android:name=".macro_tab2" />
+        <activity android:name=".macro_tab3" />
+        <activity android:name=".macro_tab4"></activity>
     </application>
 
 </manifest>
