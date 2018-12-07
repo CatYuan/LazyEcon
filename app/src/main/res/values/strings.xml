@@ -15,6 +15,9 @@
     <string name="Submit">Submit</string>
     <string name="Result">Result</string>
     <string name="Elasticitydemandstatement">Elasticity of Demand = </string>
+    <string name="Intercept">Intercept</string>
+    <string name="plusorminus">+ / -</string>
+    <string name="slope">Slope</string>
     <string-array name="micro_tab1_spinner_array">
         <item>Demand</item>
         <item>Supply</item>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     tools:context=".MainActivity">
 
     <Button
@@ -16,9 +17,11 @@
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
+        android:background="#cc99ff"
+        android:onClick="goToMicro"
         android:text="@string/micro"
-        android:textAllCaps="true"
-        android:onClick="goToMicro"/>
+        android:textSize="30sp"
+        android:textAllCaps="true" />
 
     <Button
         android:id="@+id/macro_button"
@@ -26,7 +29,9 @@
         android:layout_height="276dp"
         android:layout_below="@+id/micro_button"
         android:layout_marginTop="1dp"
+        android:background="#99ccff"
+        android:onClick="goToMacro"
         android:text="@string/macro"
-        android:textAllCaps="true"
-        android:onClick="goToMacro"/>
+        android:textSize="30sp"
+        android:textAllCaps="true" />
 </RelativeLayout>
