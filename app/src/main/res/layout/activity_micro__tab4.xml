@@ -12,13 +12,14 @@
         android:layout_height="380dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/slope2" />
 
     <Spinner
         android:id="@+id/spinner2"
@@ -73,18 +74,82 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="86dp"
-        android:visibility="invisible"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Submit"
+        android:text="@string/submit"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/graph"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/spinner2"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/shiftval1"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="10sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="@string/shiftval"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/slope"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <EditText
+        android:id="@+id/intercept2"
+        android:layout_width="49dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Intercept"
+        android:visibility="invisible"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interceptfordemandorsupply" />
+
+    <EditText
+        android:id="@+id/plusorminus2"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="10sp"
+        android:hint="@string/plusorminus"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/intercept2"
+        app:layout_constraintTop_toBottomOf="@+id/plusorminus" />
+
+    <EditText
+        android:id="@+id/slope2"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/slope"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/plusorminus2"
+        app:layout_constraintTop_toBottomOf="@+id/slope" />
+
+    <EditText
+        android:id="@+id/shiftval2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/shiftval"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/slope2"
+        app:layout_constraintTop_toBottomOf="@+id/shiftval1" />
 
 </android.support.constraint.ConstraintLayout>

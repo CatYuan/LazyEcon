@@ -25,6 +25,7 @@
     <string name="calculate_gdp">Calculate GDP</string>
     <string name="GDP_approach">What approach will you use \n to calculate the GDP?</string>
     <string name="plus">+</string>
+    <string name="shiftval">Shift Value</string>
     <string-array name="micro_tab1_spinner_array">
         <item>Demand</item>
         <item>Supply</item>
