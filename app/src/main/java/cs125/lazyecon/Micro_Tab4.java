@@ -44,11 +44,7 @@ public class Micro_Tab4 extends AppCompatActivity implements AdapterView.OnItemS
     public void equationtoGraph(Double i, Double s, String sign) {
         double y;
         boolean isPositive;
-        if (sign == "+") {
-            isPositive = true;
-        } else {
-            isPositive = false;
-        }
+        isPositive = sign.equals("+");
         series = new LineGraphSeries<>();
         GraphView graph = (GraphView)findViewById(R.id.graph);
         int numDataPoints = 500;
@@ -90,7 +86,7 @@ public class Micro_Tab4 extends AppCompatActivity implements AdapterView.OnItemS
                         intercept = Double.valueOf(interceptinput.getText().toString());
                         slope = Double.valueOf(slopeinput.getText().toString());
                         plusorminus = plusorminusinput.getText().toString();
-
+                        equationtoGraph(intercept, slope, plusorminus);
                     }
                 });
 

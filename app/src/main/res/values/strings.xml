@@ -36,6 +36,7 @@
         <item>Income</item>
     </string-array>
     <string-array name="Graphstuff">
+        <item>Graph Content</item>
         <item>Demand or Supply</item>
         <item>Demand and Supply</item>
         <item>Demand or Supply (Shift it)</item>
