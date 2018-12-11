@@ -19,6 +19,7 @@
         android:text="@string/calculate_gdp"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
+
     <TextView
         android:id="@+id/GDP_approach"
         android:layout_width="wrap_content"
@@ -26,20 +27,22 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="165dp"
-        android:layout_marginLeft="165dp"
-        android:layout_marginTop="115dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="124dp"
         android:text="@string/GDP_approach" />
+
     <Spinner
         android:id="@+id/macro_tab1_spinner"
         android:layout_width="162dp"
         android:layout_height="36dp"
         android:layout_alignTop="@+id/GDP_approach"
-        android:layout_marginStart="-114dp"
-        android:layout_toEndOf="@+id/macro_tab1_GDP_editText1"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-210dp"
+        android:layout_toStartOf="@+id/GDP_approach"
         android:text="@string/Type"
-        android:layout_marginLeft="-114dp"
-        android:layout_toRightOf="@+id/macro_tab1_GDP_editText1" />
+        android:layout_marginRight="-210dp"
+        android:layout_toLeftOf="@+id/GDP_approach" />
     <EditText
         android:id="@+id/macro_tab1_GDP_editText1"
         android:layout_width="wrap_content"
@@ -79,39 +82,37 @@
         android:textSize="12sp"
         android:layout_marginLeft="-40dp"
         android:layout_toRightOf="@+id/GDP_description" />
+
     <EditText
         android:id="@+id/macro_tab1_GDP_editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/macro_tab1_GDP_editText1"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_toEndOf="@+id/macro_tab1_GDP_editText3"
+        android:layout_toRightOf="@+id/macro_tab1_GDP_editText3"
         android:hint="Net Exports"
         android:inputType="numberDecimal"
         android:textSize="12sp" />
+
     <Button
         android:id="@+id/macro_tab1_submit_button"
         android:layout_width="78dp"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/GDP_approach"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="268dp"
+        android:layout_below="@+id/macro_tab1_GDP_editText4"
+        android:layout_alignStart="@+id/macro_tab1_GDP_editText4"
+        android:layout_marginTop="24dp"
         android:text="@string/submit"
-        android:layout_alignRight="@+id/GDP_approach"
-        android:layout_marginRight="0dp" />
+        android:layout_alignLeft="@+id/macro_tab1_GDP_editText4" />
+
     <TextView
         android:id="@+id/macro_tab1_results"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/macro_tab1_GDP_editText1"
         android:layout_alignStart="@+id/GDP_description"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="231dp"
-        android:text="this is the result"
-        android:layout_alignLeft="@+id/GDP_description"
-        android:layout_marginLeft="0dp" />
+        android:layout_marginTop="101dp"
+        android:layout_alignLeft="@+id/GDP_description" />
 
 </RelativeLayout>

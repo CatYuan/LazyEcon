@@ -1,9 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".macro_tab2">
+    tools:context=".macro_tab1">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/inflation_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/macro_tab2_inflation_results"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="164dp"
+        android:text="Calculate Inflation"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/inflation_approach"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="131dp"
+        android:text="@string/inflation_approach_text"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/macro_tab2_inflation_editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/inflation_approach"
+        android:layout_alignLeft="@+id/inflation_approach"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="182dp"
+        android:hint="Current CPI"
+        android:inputType="numberDecimal"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/macro_tab2_inflation_editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/macro_tab2_inflation_editText1"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/macro_tab2_inflation_editText1"
+        android:hint="Old CPI"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/macro_tab2_inflation_editText1" />
+
+    <EditText
+        android:id="@+id/macro_tab2_interest_editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/macro_tab2_interest_submit_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_toStartOf="@+id/macro_tab2_interest_editText2"
+        android:layout_toLeftOf="@+id/macro_tab2_interest_editText2"
+        android:hint="Nominal IR"
+        android:inputType="numberDecimal"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/macro_tab2_interest_editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/macro_tab2_inflation_submit_button"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-18dp"
+        android:layout_marginTop="348dp"
+        android:hint="Inflation Rate"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        android:layout_alignLeft="@+id/macro_tab2_inflation_submit_button"
+        android:layout_marginLeft="-18dp" />
+
+    <Button
+        android:id="@+id/macro_tab2_inflation_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignTop="@+id/macro_tab2_inflation_editText1"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_toEndOf="@+id/macro_tab2_inflation_editText2"
+        android:layout_toRightOf="@+id/macro_tab2_inflation_editText2"
+        android:text="@string/submit" />
+
+    <TextView
+        android:id="@+id/macro_tab2_inflation_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/macro_tab2_inflation_editText1"
+        android:layout_alignStart="@+id/inflation_approach"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="11dp"
+        android:layout_alignLeft="@+id/inflation_approach"
+        android:layout_marginLeft="34dp" />
+
+    <TextView
+        android:id="@+id/macro_tab2_interest_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/macro_tab2_interest_editText1"
+        android:layout_alignStart="@+id/macro_tab2_interest_editText1"
+        android:layout_marginTop="50dp"
+        android:layout_alignLeft="@+id/macro_tab2_interest_editText1" />
+
+    <Button
+        android:id="@+id/macro_tab2_interest_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/macro_tab2_interest_editText2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/macro_tab2_interest_editText2"
+        android:text="@string/submit"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/macro_tab2_interest_editText2" />
+
+    <TextView
+        android:id="@+id/interest_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Calculate Real Interest "
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/interest_approach"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest_description"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="Enter the nominal interest rate and the inflation rate to find the real interest rate." />
+
+</RelativeLayout>

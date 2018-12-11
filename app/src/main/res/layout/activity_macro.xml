@@ -5,46 +5,53 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MacroActivity">
+    tools:context=".MacroActivity"
+    android:background="#9999ff">
 
     <Button
         android:id="@+id/macro_tab1_button"
         android:layout_width="match_parent"
-        android:layout_height="136dp"
+        android:layout_height="257dp"
         android:layout_above="@+id/micro_tab2_button"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="-149dp"
-        android:text="@string/gdp"
         android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
-        android:onClick="macro_goToTab1"/>
+        android:layout_marginBottom="-149dp"
+        android:background="#c6ff"
+        android:onClick="macro_goToTab1"
+        android:text="@string/gdp" />
 
     <Button
         android:id="@+id/macro_tab2_button"
         android:layout_width="match_parent"
-        android:layout_height="134dp"
+        android:layout_height="285dp"
+        android:layout_below="@+id/macro_tab1_button"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="149dp"
-        android:text="@string/inflation_and_interest_rate"
         android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
-        android:onClick="macro_goToTab2"/>
+        android:layout_marginTop="173dp"
+        android:background="#ff99"
+        android:onClick="macro_goToTab2"
+        android:text="@string/inflation_and_interest_rate" />
 
+    <!--
     <Button
         android:id="@+id/macro_tab3_button"
         android:layout_width="match_parent"
         android:layout_height="135dp"
+        android:layout_below="@+id/macro_tab2_button"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginBottom="143dp"
-        android:text="@string/unemployment"
-        android:layout_alignParentLeft="true"
         android:layout_marginLeft="0dp"
-        android:onClick="macro_goToTab3"/>
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="143dp"
+        android:background="#c6ff"
+        android:onClick="macro_goToTab3"
+        android:text="@string/unemployment" />
 
     <Button
         android:id="@+id/macro_tab4_button"
@@ -57,6 +64,7 @@
         android:text="@string/mps_mpc_and_tax_multiplier"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="0dp"
-        android:onClick="macro_goToTab4"/>
+        android:onClick="macro_goToTab4"
+        android:background="#ff99"/>-->
 
 </RelativeLayout>

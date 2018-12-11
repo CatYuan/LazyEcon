@@ -6,8 +6,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class macro_tab1 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private String spinnerItem;
@@ -16,6 +18,12 @@ public class macro_tab1 extends AppCompatActivity implements AdapterView.OnItemS
     private EditText editText3;
     private EditText editText4;
     private String macro_log = "cs.125.lazyEcon.macro_tab1";
+    private Button submit;
+    private TextView result;
+    private double text1Num;
+    private double text2Num;
+    private double text3Num;
+    private double text4Num;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +36,8 @@ public class macro_tab1 extends AppCompatActivity implements AdapterView.OnItemS
         editText2 = (EditText)findViewById(R.id.macro_tab1_GDP_editText2);
         editText3 = (EditText)findViewById(R.id.macro_tab1_GDP_editText3);
         editText4 = (EditText)findViewById(R.id.macro_tab1_GDP_editText4);
+        submit = (Button)findViewById(R.id.macro_tab1_submit_button);
+        result = (TextView)findViewById(R.id.macro_tab1_results);
         Log.d(macro_log, "views created");
 
         // Create the spinner.
@@ -49,15 +59,19 @@ public class macro_tab1 extends AppCompatActivity implements AdapterView.OnItemS
         }
         Log.d(macro_log,"adapter applied to spinner");
 
+
         //what happens when a different spinnerItem is selected
-        /*switch(spinnerItem) {
-            case "Expenditure":
-                break;
-            case "Income":
-                break;
-            default:
-                break;
-        }*/
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                text1Num = Double.parseDouble(editText1.getText().toString());
+                text2Num = Double.parseDouble(editText2.getText().toString());
+                text3Num = Double.parseDouble(editText3.getText().toString());
+                text4Num = Double.parseDouble(editText4.getText().toString());
+                Double sum = text1Num + text2Num + text3Num + text4Num;
+                result.setText("The GDP is " + sum);
+            }
+        });
     }
 
     @Override
